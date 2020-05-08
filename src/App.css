@@ -1,5 +1,6 @@
 #display-calc {
   width: 700px;
+  margin: auto;
 }
 
 .display-res {
@@ -20,10 +21,12 @@
 
 .btn-row {
   display: flex;
+  flex-direction: row;
 }
 
 #btn-name {
   width: 25%;
+  font-size: 20px;
   text-align: center;
   color: black;
   border: 1px solid gray;
