@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../App.css';
 
 function Display({ result }) {
   return (
-    <div>
-      <h1>
+    <div className="display-res">
+      <h1 id="total-res">
         {result}
       </h1>
     </div>
