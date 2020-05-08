@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 
@@ -21,9 +20,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-);
+export default App;
