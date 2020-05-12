@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 function Display({ result }) {
   return (
-    <div>
-      <h1>
+    <div className="display-res">
+      <h1 id="total-res">
         {result}
       </h1>
     </div>
