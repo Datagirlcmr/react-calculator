@@ -1,6 +1,6 @@
-function Calculate (calculatordata, buttonName) {
-  let { total, next, operation } = calculatorData;
- 
-}
+// function Calculate(calculatorData, buttonName) {
+//   let { total, next, operation } = calculatorData;
 
-export default Calculate;
+// }
+
+// export default Calculate;
