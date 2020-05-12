@@ -1,10 +1,12 @@
 #display-calc {
   width: 700px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .display-res {
-  background-color: gray;
+  background-color: rgb(148, 142, 142);
   height: 100px;
 }
 
@@ -15,11 +17,13 @@
   text-align: right;
 }
 
-.cont-button .btn-row {
-  height: 100px;
+.cont-button {
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-row {
+  height: 100px;
   display: flex;
   flex-direction: row;
 }
