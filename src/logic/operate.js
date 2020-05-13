@@ -1,12 +1,11 @@
-/* eslint-disable keyword-spacing */
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const bigOne = Big(numberOne);
-  const bigTwo = Big(numberTwo);
+  const bigOne = numberOne !== null ? Big(numberOne) : 0;
+  const bigTwo = numberTwo !== null ? Big(numberTwo) : 0;
   let total = 0;
 
-  switch(operation) {
+  switch (operation) {
     case '+':
       total = bigOne.plus(bigTwo);
       break;
@@ -21,16 +20,20 @@ const operate = (numberOne, numberTwo, operation) => {
 
     case '÷':
       if (bigTwo === '0') {
-        total = NaN;
-      }else {
+        total = 'Infinity';
+      } else {
         total = bigOne.div(bigTwo);
       }
       break;
 
+    case '%':
+      total = bigOne.mod(bigTwo);
+      break;
+
     default:
-      total /= 100;
+      total = 0;
   }
-  return total;
+  return total.toString();
 };
 
 export default operate;

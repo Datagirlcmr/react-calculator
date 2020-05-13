@@ -4,6 +4,7 @@ import React from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import Calculate from '../logic/calculate';
+import '../App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,9 +17,9 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(n) {
-    const newState = Calculate(n, this.state);
-    this.setState(newState);
+  handleClick(s) {
+    const finalState = Calculate(s, this.state);
+    this.setState(finalState);
   }
 
   render() {

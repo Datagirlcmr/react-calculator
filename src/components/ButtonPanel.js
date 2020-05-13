@@ -15,7 +15,7 @@ function ButtonPanel({ onClick }) {
         <Button name="7" color="rgb(224, 223, 219)" onClick={name => onClick(name)} />
         <Button name="8" color="rgb(224, 223, 219)" onClick={name => onClick(name)} />
         <Button name="9" color="rgb(224, 223, 219)" onClick={name => onClick(name)} />
-        <Button name="X" onClick={name => onClick(name)} />
+        <Button name="x" onClick={name => onClick(name)} />
       </div>
       <div className="btn-row">
         <Button name="4" color="rgb(224, 223, 219)" onClick={name => onClick(name)} />

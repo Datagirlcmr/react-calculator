@@ -14,7 +14,7 @@ function Button({
       id="btn-name"
       type="button"
       style={style}
-      onClick={name => { onClick(name); }}
+      onClick={() => onClick(name)}
     >
       {name}
     </button>
@@ -22,16 +22,14 @@ function Button({
 }
 
 Button.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   color: PropTypes.string,
-  wide: PropTypes.bool,
+  wide: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
-  name: 'name',
   color: 'orange',
-  wide: false,
 };
 
 export default Button;
