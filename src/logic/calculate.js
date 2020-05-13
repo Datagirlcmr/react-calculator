@@ -2,14 +2,14 @@ import operate from './operate';
 
 function Calculate(buttonName, calculatorData) {
   let { total, next, operation } = calculatorData;
-  const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
-  const oprations = ['+', '-', 'x', '%', '÷'];
+  const dataNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
+  const dataOperations = ['+', '-', 'x', '%', '÷'];
 
-  const count = (el, arr) => {
+  const count = (elem, arr) => {
     let sum = 0;
     // eslint-disable-next-line no-plusplus
     for (let i = 0; i < arr.length; i++) {
-      if (arr[i] === el) {
+      if (arr[i] === elem) {
         sum += 1;
       }
     }
@@ -18,7 +18,7 @@ function Calculate(buttonName, calculatorData) {
 
   if (buttonName === '+/-') {
     total = parseFloat(total) * (-1).toString();
-  } else if (numbers.includes(buttonName)) {
+  } else if (dataNumbers.includes(buttonName)) {
     if (total === null || total === 'Infinity') {
       total = buttonName;
     } else if (buttonName === '.') {
@@ -29,7 +29,7 @@ function Calculate(buttonName, calculatorData) {
     } else if (buttonName !== '0' || total !== '0') {
       total += buttonName;
     }
-  } else if (oprations.includes(buttonName)) {
+  } else if (dataOperations.includes(buttonName)) {
     if (buttonName !== '%') {
       next = next !== null ? operate(next, total.split(operation)[1], operation) : total;
       operation = buttonName;
