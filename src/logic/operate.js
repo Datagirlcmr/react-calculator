@@ -20,7 +20,11 @@ const operate = (numberOne, numberTwo, operation) => {
       break;
 
     case '÷':
-      total = bigOne.div(bigTwo);
+      if (bigTwo === '0') {
+        total = NaN;
+      }else {
+        total = bigOne.div(bigTwo);
+      }
       break;
 
     default:
