@@ -1,10 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Calculator App (React)
+This is a calculator built with the React Javascrupt framework..
+
+## Live Demo Link
+
+[Live Demo Link](https://app-reactcalculator.herokuapp.com/)
+
+=======
+
+## Live Version
+
+<img src='src/images/calculator.png' alt='calculator app'>
+
+## Get Started
+
+- Download or clone this [repo](https://github.com/Datagirlcmr/react-calculator) here.
+- on the terminal, run 
+    cd react-calculator
+- then run
+
+        npm install
+
+- To load up the calculator, run
+
+        npm start
+
+to use your calculator
+
+## Built With
+
+- Javascript
+- React
+- Vscode for coding
+- ESLint for Validation
+
+
+## Author
+
+👤 **Selma Ndi**
+
+- Github: [@githubhandle](https://github.com/Datagirlcmr)
+- Twitter: [@twitterhandle](https://twitter.com/SelmaNdi)
+- Linkedin: [linkedin](https://www.linkedin.com/in/selma-ndi-datagirl-imba-8976ab32/)
+
+
+Contributions, issues and feature requests are welcome! 
+
+
+Feel free to check the [issues page](https://github.com/Datagirlcmr/react-calculator/issues).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
