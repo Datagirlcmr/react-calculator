@@ -1,5 +1,5 @@
 # Calculator App (React)
-This is a calculator built with the React Javascrupt framework..
+This is a calculator built with the React Javascript framework..
 
 ## Live Demo Link
 
@@ -32,6 +32,10 @@ to use your calculator
 - React
 - Vscode for coding
 - ESLint for Validation
+
+## Future Features
+
+- Add other scientic functionalities 
 
 
 ## Author
